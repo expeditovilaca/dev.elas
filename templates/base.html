@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFRN Docência</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">IFRN <span>Docência</span></div>
+        <nav>
+            <a href="{% url 'home' %}">Início</a>
+            <a href="{% url 'pesquisa' %}">Pesquisa</a>
+            <a href="{% url 'indicadores' %}">Indicadores</a>
+            <a href="{% url 'forum_lista' %}">Fórum</a>
+        </nav>
+    </header>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>© 2026 Representatividade Feminina na Docência IFRN</p>
+    </footer>
+</body>
+</html>
