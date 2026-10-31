@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Fórum de Discussões</h2>
+<div class="card">
+    <h3>Sub-representação nas disciplinas de Exatas</h3>
+    <p>Discussão sobre a proporção de docentes mulheres em matérias como Física e Matemática no IFRN...</p>
+    <a href="{% url 'forum_detalhe' %}" class="btn">Ver Discussão</a>
+</div>
+<div class="card">
+    <h3>Iniciativas de incentivo às alunas em Tecnologia</h3>
+    <p>Projetos de extensão voltados para atrair mais alunas para as áreas de Computação...</p>
+    <a href="{% url 'forum_detalhe' %}" class="btn">Ver Discussão</a>
+</div>
+{% endblock %}
