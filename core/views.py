@@ -1,3 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
+def home(request):
+    return render(request, 'core/home.html')
+
+def pesquisa(request):
+    return render(request, 'core/pesquisa.html')
+
+def indicadores(request):
+    return render(request, 'core/indicadores.html')
